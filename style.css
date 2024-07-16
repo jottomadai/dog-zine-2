@@ -11,9 +11,9 @@ body {
   /* align-items: center; */
 }
 
-body:hover {
+/* body:hover {
   border-image: url("https://dog-zine.goatcounter.com/count?p=/test");
-}
+} */
 
 footer {
   padding-top: 3rem;

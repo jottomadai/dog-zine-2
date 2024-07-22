@@ -12,10 +12,14 @@ body {
   /* align-items: center; */
 }
 
+html {
+  margin: auto;
+  /* max-width: 600px; */
+}
+
 /* NAV ============================================= */
 nav {
   background-color: orange;
-  /* padding: .5rem; */
   padding: 1rem;
 }
 
@@ -56,6 +60,9 @@ footer {
 img.hero {
   max-height: 40vh;
   max-width: 40vw;
+  transform: perspective(400px);
+  background-color: hotpink;
+
   /* margin: o auto; */
 }
 
@@ -64,6 +71,7 @@ img.hero {
   background-color: aquamarine;
   display: grid;
   grid-template-columns: 1fr 2fr;
+  /* grid-template-rows: ; */
   /* padding: 1rem; */
   margin: 1rem;
   /* height: 50vh; */
@@ -77,6 +85,10 @@ img.hero {
 
 .left {
   background-color: rgb(198, 255, 236);
+}
+
+.middle-right-wrapper {
+  background-color: rgb(120, 27, 196);
 }
 
 .middle {
@@ -96,6 +108,28 @@ img.hero {
   z-index: 5;
   justify-content: space-around;
   align-items: center;
+}
+
+.hero img {
+  transform: perspective(400px) rotateY(45deg);
+
+}
+
+#sticker-1 {
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(/media/svgs/sticker-star-2-orange.svg);
+  background-size: contain;
+}
+
+#sticker-2 {
+  background-image: circle red;
+
+}
+
+.sticker p {
+  padding: 1rem;
 }
 
 /* END HERO =========================================== */
@@ -124,6 +158,15 @@ h3 {
 
 /* END typography ============================ */
 
-@media screen and (min-width: 900px) {}
+@media screen and (min-width: 900px) {
+  .middle-right-wrapper {
+    grid-template-columns: 2fr / 1fr;
+  }
+
+  body {
+    background-color: yellow;
+  }
+
+}
 
 /* end query */

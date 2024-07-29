@@ -15,6 +15,7 @@ html {
   margin: auto;
   /* background-color: rgb(56, 56, 56); */
   padding-bottom: 2rem;
+  width: 100%;
 }
 
 body {
@@ -23,6 +24,7 @@ body {
   /* display: grid; */
   /* padding: 1rem; */
   margin: 0;
+  padding: 0;
   /* align-items: center; */
   /* display: flex; */
   /* flex-direction: column; */
@@ -32,6 +34,9 @@ main {
   padding: 0rem;
 }
 
+article {
+  padding: 1rem;
+}
 
 /* NAV ============================================= */
 nav {
@@ -233,9 +238,9 @@ nav {
   /* font-optical-sizing: auto; */
   /* position: relative; */
   z-index: 6;
-  padding: 2rem;
+  padding: 2rem 1rem 1rem 1rem;
   color: rgb(0, 160, 185);
-
+  text-align: center;
 }
 
 h2 {
@@ -265,6 +270,33 @@ p {
 /* END typography ============================ */
 
 /* begin media queries =========================== */
+@media screen and (max-width: 500px) {
+  .sticker {
+    width: 9rem;
+  }
+
+  .sticker p {
+    padding: 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  .hero-image {
+    width: 100vw;
+    height: 70vw;
+  }
+
+  .hero-image img {
+    height: 65vw;
+  }
+
+  .hero-info {
+    padding: 0rem;
+    margin: 0;
+    width: 100vw;
+  }
+
+}
+
 
 @media screen and (min-width: 900px) {
   main {

@@ -1,0 +1,299 @@
+:root {
+  /* --hero-height: 60vh; */
+  --primary: color: rgb(0, 179, 206);
+  --secondary: color: orange;
+  ;
+}
+
+img {
+  max-height: auto;
+  max-width: 100%;
+}
+
+html {
+  /* max-width: 800px; */
+  margin: auto;
+  /* background-color: rgb(56, 56, 56); */
+  padding-bottom: 2rem;
+}
+
+body {
+  background-color: rgb(255, 228, 161);
+  text-align: center;
+  /* display: grid; */
+  /* padding: 1rem; */
+  margin: 0;
+  /* align-items: center; */
+  /* display: flex; */
+  /* flex-direction: column; */
+}
+
+main {
+  padding: 0rem;
+}
+
+
+/* NAV ============================================= */
+nav {
+  background-color: orange;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  border-radius: .25rem;
+  display: inline-block;
+  background-color: --primary;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  padding: .8rem;
+  transition: .5s;
+  text-decoration: none;
+  display: inline-block;
+  color: black
+}
+
+nav a:hover {
+  border-radius: .25rem;
+  background-color: rgb(255, 102, 0);
+}
+
+nav ul {
+  padding: 0;
+}
+
+/* END NAV ========================================= */
+
+footer {
+  padding-top: 3rem;
+  margin: 3rem;
+}
+
+/* HERO =========================================== */
+.hero-section-wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+
+}
+
+.hero-section-wrapper h1 {
+  grid-column: 1 / -1;
+  margin: 0;
+}
+
+/* end hero ------------------------------------------- */
+
+/* hero-image ========================================= */
+.hero-image {
+  /* height: 50vw; */
+  margin: auto;
+  position: relative;
+  /* justify-content: center; */
+  padding-bottom: 3rem;
+  /* box-shadow: 0 5rem 0 rgba(0, 0, 0, 0.245); */
+  /* width: 100%; */
+  height: 60vw;
+  width: 90vw;
+  text-align: center;
+
+}
+
+.hero-image img {
+  z-index: 3;
+  /* height: 50vw; */
+  transition: 1s;
+  transform: perspective(600px) rotateY(8deg);
+  height: 60vw;
+
+}
+
+.hero-image img:hover {
+  filter: hue-rotate(60deg);
+  transform: perspective(699px) rotateY(5deg);
+}
+
+.hero-image-wrapper {
+  box-shadow: inset 0 -8rem 0 rgba(105, 68, 0, 0.296);
+}
+
+/* end hero-image ========================================= */
+
+.sticker {
+  transition: 1s;
+  text-align: center;
+  position: absolute;
+  z-index: 6;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: all;
+  width: 11rem;
+  filter: brightness(110%);
+}
+
+.sticker:hover {
+  transform: rotate(5deg);
+  filter: hue-rotate(+70deg) brightness(1.1);
+  background-image: url(/media/svgs/green-orb-jelly.svg);
+}
+
+.sticker:nth-of-type(1) {
+  background-image: url(/media/svgs/sticker-star-2-orange.svg);
+  left: 0;
+  top: 0;
+  filter: hue-rotate(190);
+}
+
+.sticker:nth-of-type(2) {
+  background-image: url(/media/svgs/aqua-jelly.svg);
+  right: 0;
+  top: 20%;
+}
+
+.sticker:nth-of-type(3) {
+  background-image: url(/media/svgs/pink-bowtie.svg);
+  bottom: 20%;
+  left: 0;
+}
+
+.sticker p {
+  /* margin: 3rem; */
+  padding: 3rem;
+}
+
+.hero-info {
+  background-color: rgba(255, 166, 0, 0.525);
+  /* margin: 2.5rem; */
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+main {
+  text-align: left;
+}
+
+
+/* END HERO =========================================== */
+
+/* buttons ============================================ */
+button {
+  border: 0;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  box-shadow: 0 .5rem 0 black;
+  border: white 0px solid;
+}
+
+button:nth-of-type(1) {
+  background-color: rgb(255, 154, 171);
+}
+
+button:nth-of-type(2) {
+  background-color: rgb(255, 238, 110)
+}
+
+
+button:hover {
+  background-color: rgb(255, 102, 0);
+  /* border-inline: rgb(0, 0, 0) 4px solid; */
+  /* box-shadow: 0 0rem 0 black; */
+  transition: .5s;
+  /* transform: translateY(.5rem); */
+
+}
+
+/* end buttons ============================================ */
+
+
+/* testing ================================================*/
+nav {
+  display: none;
+}
+
+/* end testing =========================================== */
+
+/* typography ============================ */
+.hero-section-wrapper h1 {
+  font-family: "Rubik", sans-serif;
+  font-size: clamp(1.2rem, 10vw, 10rem);
+  font-weight: 800;
+  /* font-optical-sizing: auto; */
+  /* position: relative; */
+  z-index: 6;
+  padding: 2rem;
+  color: rgb(0, 160, 185);
+
+}
+
+h2 {
+  font-family: "Rubik", sans-serif;
+  font-size: 2rem;
+}
+
+h3 {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.5rem;
+}
+
+.sticker p {
+  font-size: 1.4rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+}
+
+nav a {
+  font-family: "Rubik", sans-serif;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+/* END typography ============================ */
+
+/* begin media queries =========================== */
+
+@media screen and (min-width: 900px) {
+  main {
+    padding: 2rem;
+  }
+
+
+  .hero-image img {
+    height: 50vw;
+  }
+
+  .hero-image {
+    height: 50vw;
+    width: 60vw;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+  .sticker {
+    width: 12rem;
+  }
+
+  .hero-section-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+}
+
+/* end query */

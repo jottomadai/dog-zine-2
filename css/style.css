@@ -314,8 +314,25 @@ button:hover {
 
 #all-pages-info {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
 }
+
+.grid-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  padding: 1rem;
+  /* gap: 1rem; */
+}
+
+.grid-section-right {
+  max-width: 50vw;
+  padding-left: 1rem;
+  grid-column: -2 / -1;
+  grid-row: -1 / 99;
+  /* background-color: red; */
+}
+
 
 /* end image control =========================================== */
 
@@ -409,8 +426,17 @@ p {
   display: flex;
 }
 
-
 i {
+  font-size: 4rem;
+}
+
+.fa-circle {
+  font-size: 1rem;
+  padding-left: 1rem;
+  transform: translateY(-1rem);
+}
+
+.read-nav i {
   box-shadow: 0 .5rem 0 black;
   /* border: 0; */
   padding: 1rem;
@@ -422,38 +448,30 @@ i {
   background-color: #f59eb0;
 }
 
-i#all {
+.read-nav i#all {
   /* color: red; */
   background-color: orange;
 }
 
-i a {
+.read-nav i a {
   /* color: #e8a2ab; */
   padding: 0;
   margin: 0;
 }
 
-i#start {
-  /* background-color: rgb(255, 154, 171); */
-}
-
-i#left {
-  /* background-color: rgb(255, 154, 171); */
-}
-
-i#right {
+.read-nav i#right {
   background-color: rgb(110, 214, 255);
   /* background-color: rgb(255, 154, 171); */
 }
 
-i#end {
+.read-nav i#end {
   background-color: rgb(110, 214, 255);
   /* background-color: rgb(255, 154, 171); */
   /* background-color: rgb(255, 238, 110); */
 }
 
 
-i:hover {
+.read-nav i:hover {
   /* background-color: rgb(255, 102, 0); */
   /* border: inset 6px solid white; */
   /* border-inline: rgb(0, 0, 0) 4px solid; */
@@ -528,7 +546,11 @@ i:hover {
     font-size: 6rem;
   }
 
+  .grid-section {
+    grid-template-columns: 1fr 1fr;
+  }
 }
+
 
 @media screen and (min-width: 1100px) {
 
@@ -540,6 +562,9 @@ i:hover {
     grid-template-columns: 1fr 1fr;
   }
 
+  .grid-section {
+    grid-template-columns: 2fr 1fr;
+  }
 
 }
 

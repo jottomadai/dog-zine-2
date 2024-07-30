@@ -344,7 +344,80 @@ button:hover {
   grid-column: 1 / -1;
 }
 
-/* end image control =========================================== */
+/* end page control =========================================== */
+
+/* artists =====================================================*/
+.artists {
+  text-decoration: none;
+  list-style: none;
+  padding: 0rem;
+  margin: 0;
+  /* background-color: red; */
+}
+
+.artists ul {
+  padding: 0rem;
+  margin: 0;
+}
+
+.artists li {
+  display: inline-block;
+  margin: 0 1.5rem 1.5rem 0;
+  background-color: gray;
+  /* margin: .5rem; */
+  padding: 1rem;
+  border-radius: 16px;
+}
+
+.artists li a {
+  /* padding-top: 1rem; */
+  background-color: orange;
+  min-width: 8rem;
+  box-shadow: 0 .5rem 0 black;
+  border-radius: 4px;
+  color: black;
+  display: block;
+  padding: 1rem;
+  /* margin: 1rem; */
+  /* background-color: red; */
+  text-decoration: none;
+}
+
+.artists a:hover {
+  /* background-color: rgb(255, 102, 0); */
+  /* border: inset 6px solid white; */
+  /* border-inline: rgb(0, 0, 0) 4px solid; */
+  box-shadow: 0 .4rem 0 rgb(62, 62, 62);
+  transform: translateY(.1rem);
+  filter: brightness(110%);
+  /* display: inline-block; */
+
+}
+
+
+.artists li:nth-of-type(1) {
+  /* background-color: red; */
+  background-color: rgb(255, 238, 110);
+}
+
+.artists li:nth-of-type(2) {
+  background-color: rgb(110, 214, 255);
+}
+
+.artists li:nth-of-type(3) {
+  background-color: rgb(255, 154, 171);
+}
+
+.artists li:nth-of-type(4) {
+  background-color: rgb(110, 214, 255);
+}
+
+.artists li:nth-of-type(5) {
+  background-color: rgb(255, 238, 110);
+}
+
+
+/* end artists================================================== */
 
 /* typography ============================ */
 .hero-section-wrapper h1 {
@@ -523,6 +596,7 @@ i {
 
   article {
     padding: 1rem;
+    /* padding-bottom: 3rem; */
   }
 
 }
@@ -530,7 +604,7 @@ i {
 
 @media screen and (min-width: 900px) {
   main {
-    padding: 0 2rem;
+    padding: 0 2rem 4rem 2rem;
   }
 
 

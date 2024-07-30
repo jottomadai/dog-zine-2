@@ -320,13 +320,13 @@ button:hover {
 .grid-section {
   display: grid;
   grid-template-columns: 1fr;
-  align-items: center;
+  align-items: start;
   padding: 1rem;
   /* gap: 1rem; */
 }
 
 .grid-section#about {
-  align-items: baseline;
+  align-items: start;
   gap: 3rem;
   padding: 0;
   /* background-color: red; */
@@ -633,6 +633,12 @@ i {
   .grid-section {
     grid-template-columns: 1fr 1fr;
   }
+
+  #all-pages-info {
+    grid-template-columns: 1fr 1fr;
+    /* background-color: red; */
+  }
+
 }
 
 
